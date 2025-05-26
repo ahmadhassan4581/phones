@@ -1,0 +1,144 @@
+.product-section {
+  padding: 2rem;
+  background-color: black;
+}
+
+.product-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* Sidebar Styles */
+.product-sidebar {
+  width: 280px;
+  background-color: #f9c300;
+  border: 3px solid black;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  color: black;
+  overflow-y: auto;
+  max-height: calc(100vh - 4rem);
+}
+
+.filter-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.filter-block {
+  margin-bottom: 1.2rem;
+}
+
+.filter-block h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.3rem;
+}
+
+.filter-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-block li {
+  font-size: 0.85rem;
+  margin: 0.2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Memory Buttons */
+.memory-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.memory-chip {
+  background: black;
+  color: #f9c300;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Sold Out Grid */
+.sold-out-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.sold-out-box {
+  width: 100%;
+  padding-top: 100%;
+  background: white;
+  border: 2px solid black;
+}
+
+/* Product Grid */
+.product-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  background-color: #f9c300;
+  border: 3px solid black;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background: white;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.product-info {
+  padding: 0.5rem;
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin: 0.5rem 0 0.2rem;
+  text-transform: uppercase;
+  min-height: 40px;
+}
+
+.product-rating {
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.product-discount {
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+  color: black;
+}

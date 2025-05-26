@@ -1,0 +1,99 @@
+.flash-sale-section {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.flash-sale-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  background-color: #f1c40f;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.flash-sale-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.flash-sale-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.flash-sale-stars {
+  color: #000;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.flash-sale-price {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* More Offers Section */
+.more-offers {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.more-offers h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.offer-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.offer-card {
+  width: 300px;
+  border: 2px solid #f1c40f;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.ss {
+  background-color: #f1c40f;
+  padding: 0.8rem;
+  border: 4px black;
+}
+
+.offer-title {
+  font-weight: bold;
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.offer-timer {
+  font-size: 0.8rem;
+  color: #000;
+}

@@ -1,0 +1,108 @@
+/* src/components/topselling.css */
+.topselling-wrapper {
+  background: #fff;
+  padding: 30px 0;
+}
+
+/* HERO BANNER */
+.hero-banner {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  color: #ffcc00;
+  position: relative;
+  flex-wrap: wrap;
+}
+.hero-text h2 {
+  font-size: 32px;
+  margin: 0;
+}
+.hero-text p {
+  font-size: 18px;
+  margin-right: 200PX;
+}
+.hero-image {
+  height: 420px;
+}
+
+
+/* FEATURED SECTION */
+.featured-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #ffcc00;
+  padding: 30px 20px;
+  gap: 20px;
+}
+.featured-card {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+.featured-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.product-title {
+  font-size: 16px; /* Increased from 14px */
+  margin-top: 10px;
+  color: #fff; /* Ensure text is visible */
+}
+.product-price {
+  font-size: 16px;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+/* LAST CHANCE TO BUY */
+.topselling-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0 20px;
+  color: #000;
+  padding: 10px 0;
+}
+.topselling-grid{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.topselling-card{
+  border: 5px solid aqua;
+}
+.topselling-price{
+  display: flex;
+  flex-direction: row;
+
+}
+.original{
+  margin-top: 30px;
+  font-size: 11px;
+  margin-left:10px;
+  text-decoration: line-through;
+}
+.discount-tag{
+  margin: 50px 0 0 40px;
+  background: #fff;
+  padding: 4px;
+}
+
+.shop-categories-grid{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.shop-categories-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #000;
+  padding: 10px 0;
+}
