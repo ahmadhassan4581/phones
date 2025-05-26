@@ -1,6 +1,6 @@
 // src/components/Topselling.jsx
 import React from 'react';
-import '../styles/TopSelling.css';
+import '../styles/Topselling.css';
 import { featuredProducts, products,shopByCategories } from '../Pages/data';
 
 const Topselling = () => {
