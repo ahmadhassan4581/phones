@@ -1,24 +1,97 @@
-.topselling-grid{
+.topselling-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
 }
-.topselling-card{
-  border: 5px solid aqua;
-}
-.topselling-price{
-  display: flex;
-  flex-direction: row;
 
+.topselling-card {
+  border: 5px solid #ffcc00;
+  width: 100%;
+  max-width: 300px;
+  background-color: #ffcc00;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
-.original{
-  margin-top: 30px;
-  font-size: 11px;
-  margin-left:10px;
+
+.topselling-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.ss {
+  padding: 0.5rem 0;
+}
+
+.topselling-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.topselling-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.discounted {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.original {
+  font-size: 0.9rem;
   text-decoration: line-through;
+  color: #444;
 }
-.discount-tag{
-  margin: 50px 0 0 40px;
+
+.discount-tag {
   background: #fff;
-  padding: 4px;
+  color: #000;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .topselling-grid {
+    padding: 0.5rem;
+  }
+
+  .topselling-card {
+    max-width: 95vw;
+    padding: 0.8rem;
+  }
+
+  .topselling-image {
+    max-height: 250px;
+  }
+
+  .topselling-name {
+    font-size: 0.95rem;
+  }
+
+  .discounted {
+    font-size: 1rem;
+  }
+
+  .original {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+
+  .discount-tag {
+    font-size: 0.75rem;
+    margin-left: auto;
+  }
 }
