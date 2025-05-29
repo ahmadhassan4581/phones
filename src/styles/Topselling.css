@@ -6,58 +6,135 @@
 
 /* HERO BANNER */
 .hero-banner {
-  background-color: #000;
+  background-color: #ffcc00;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px;
+  padding: 5px 20px;
   color: #ffcc00;
   position: relative;
   flex-wrap: wrap;
+  gap: 20px; 
+   
 }
-.hero-text h2 {
-  font-size: 32px;
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 40px;
   margin: 0;
 }
-.hero-text p {
-  font-size: 18px;
-  margin-right: 200PX;
+
+.hero-content h2 {
+  font-size: 28px;
+  margin: 10px 0 0;
 }
+
 .hero-image {
   height: 420px;
+  max-width: 100%;
+  object-fit: cover;
 }
+
+/* 🔽 Tablet and below (stack elements vertically) */
+@media (max-width: 768px) {
+  .hero-banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+
+  .hero-image {
+    height: 400px;
+  }
+}
+
+/* 🔽 Small mobile screens */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content h2 {
+    font-size: 18px;
+  }
+
+  .hero-image {
+    height: 220px;
+  }
+}
+
 
 
 /* FEATURED SECTION */
 .featured-section {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
   background-color: #ffcc00;
   padding: 30px 20px;
   gap: 20px;
 }
+
 .featured-card {
   background-color: #000;
   text-align: center;
   color: #fff;
   padding: 10px;
 }
+
 .featured-card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
+
 .product-title {
-  font-size: 16px; /* Increased from 14px */
+  font-size: 16px;
   margin-top: 10px;
-  color: #fff; /* Ensure text is visible */
+  color: #fff;
 }
+
 .product-price {
   font-size: 16px;
   color: #ffcc00;
   font-weight: bold;
   margin-top: 3px;
 }
+
+/* ✅ Add this for mobile responsiveness */
+@media (max-width: 768px) {
+  .featured-section {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row on tablets and large phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-section {
+    grid-template-columns: 1fr; /* Stack cards in a single column on small phones */
+    padding: 20px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .featured-card img {
+    height: 200px; /* Slightly smaller images for narrow screens */
+  }
+
+  .product-title,
+  .product-price {
+    font-size: 14px; /* Slightly smaller text for better fit */
+  }
+}
+
 
 /* LAST CHANCE TO BUY */
 .topselling-title {
@@ -74,7 +151,7 @@
   gap: 40px;
 }
 .topselling-card{
-  border: 5px solid aqua;
+  border: 5px solid #ffcc00;
 }
 .topselling-price{
   display: flex;
@@ -111,6 +188,7 @@
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  border: 4px solid #ffcc00;
 }
 
 .shop-category-card img {
