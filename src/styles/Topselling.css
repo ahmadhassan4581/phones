@@ -126,7 +126,7 @@
   }
 
   .featured-card img {
-    height: 200px; /* Slightly smaller images for narrow screens */
+    height: 400px; /* Slightly smaller images for narrow screens */
   }
 
   .product-title,
