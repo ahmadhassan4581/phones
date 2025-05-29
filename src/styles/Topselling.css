@@ -6,75 +6,26 @@
 
 /* HERO BANNER */
 .hero-banner {
-  background-color: #ffcc00;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: 40px 20px;
   color: #ffcc00;
   position: relative;
   flex-wrap: wrap;
-  gap: 20px; 
-   
 }
-
-.hero-content {
-  flex: 1;
-}
-
-.hero-content h1 {
-  font-size: 40px;
+.hero-text h2 {
+  font-size: 32px;
   margin: 0;
 }
-
-.hero-content h2 {
-  font-size: 28px;
-  margin: 10px 0 0;
+.hero-text p {
+  font-size: 18px;
+  margin-right: 200PX;
 }
-
 .hero-image {
   height: 420px;
-  max-width: 100%;
-  object-fit: cover;
 }
-
-/* 🔽 Tablet and below (stack elements vertically) */
-@media (max-width: 768px) {
-  .hero-banner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 15px;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .hero-content h2 {
-    font-size: 24px;
-  }
-
-  .hero-image {
-    height: 400px;
-  }
-}
-
-/* 🔽 Small mobile screens */
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 24px;
-  }
-
-  .hero-content h2 {
-    font-size: 18px;
-  }
-
-  .hero-image {
-    height: 220px;
-  }
-}
-
 
 
 /* FEATURED SECTION */
