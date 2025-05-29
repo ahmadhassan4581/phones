@@ -28,6 +28,7 @@
 }
 
 
+
 /* FEATURED SECTION */
 .featured-section {
   display: grid;
@@ -77,7 +78,7 @@
   }
 
   .featured-card img {
-    height: 400px; /* Slightly smaller images for narrow screens */
+    height: 200px; /* Slightly smaller images for narrow screens */
   }
 
   .product-title,
